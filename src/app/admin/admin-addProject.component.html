@@ -1,0 +1,19 @@
+<form (ngSubmit)="addProject()" class="smart-green" > <br>
+   <h1> Add a Project!
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Project Name :</span>
+        <input id="Projectname" type="text"  [(ngModel)]="projectName" name="projectName" placeholder="Your Project Name"  required /><br>
+    </label>
+    
+    
+   <label>
+        <span>Project Description:</span>
+        <input id="" type="text"  [(ngModel)]="projectDesc" name="projectDesc"   placeholder="Valid Project Description"  required /><br>
+    </label>
+    <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Submit" /> 
+    </label>    
+</form>

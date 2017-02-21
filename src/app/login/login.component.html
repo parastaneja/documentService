@@ -1,0 +1,30 @@
+<md-card class="smart-green">
+    <md-toolbar color="primary">Log In</md-toolbar>
+    <md-card-content>
+    <form (ngSubmit)="login()" class="smart-green">
+    <div>
+        <section>
+          <md-input-container style="width: 100%">
+            <input mdInput placeholder="Username" required [(ngModel)]="cred.userName" name="userName" id="userName">
+          </md-input-container>
+        </section>
+        <section>
+          <md-input-container style="width: 100%">
+            <input mdInput type="password" placeholder="Password" required [(ngModel)]="cred.password" name="password" id="password">
+          </md-input-container>
+          </section>
+          <section>
+            <button md-raised-button color="orange">Login</button>
+           </section>
+     </div>
+   
+    </form>
+    <form (ngSubmit)="signup()"  class="smart-green">
+      <button md-raised-button color="orange">Signup</button>
+    </form>
+     
+    {{cred.message}}
+
+    </md-card-content>
+</md-card>
+

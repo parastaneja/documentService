@@ -1,0 +1,38 @@
+<form (ngSubmit)="back()">
+         <button type="submit">Back</button>
+</form>
+<form (ngSubmit)="createDocument()" class="smart-green"><br>
+   
+    <h1> Add a Document !
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Document Name :</span>
+        <input id="Documentname" type="text" [(ngModel)]="document.metadata_name" name="metadata_name" placeholder="Your Document Name"  required /><br>
+    </label>
+    
+    
+   <label>
+        <span>Document Description:</span>
+        <input id="" type="text"  [(ngModel)]="document.metadata_description" name="metadata_description"   placeholder="Valid Document Description"  required /><br>
+    </label>
+    <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Submit" /> 
+    </label>    
+</form>
+{{viewMessage}}
+
+<h2>{{projectName}} Project Documents</h2>
+<div class>
+<ol class="heroes">
+  <li *ngFor="let document of documents">
+     <span>{{document.metadata_name}}</span>
+     <span class="badge">.</span>
+    <button (click)="displayColumns(document)">view</button>
+    <button (click)="editDocument(document)">edit</button>
+    <span class="badge">.</span>
+    <button class="delete" (click)="deleteDocument(document)">x</button>
+  </li>
+</ol>
+</div>

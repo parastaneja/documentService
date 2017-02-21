@@ -1,0 +1,15 @@
+<button (click)="back()">back</button><br>
+<form (ngSubmit)="editDocument()" class="smart-green"><br>
+    <h1> Edit a Document !
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Document Name :</span>
+        <input id="EditDocumentname" type="text" [(ngModel)]="editDocumentName" name="editDocumentName"  placeholder="Your Document Name"  required /><br>
+    </label>
+    
+       <label>
+            <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Update!" /> 
+    </label>    
+</form>

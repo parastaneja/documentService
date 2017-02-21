@@ -1,0 +1,35 @@
+
+<form (ngSubmit)="signUp()" class="smart-green"  >
+  
+    <h1>SIGN UP! 
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Your Name :</span>
+        <input id="name" type="text"  [(ngModel)]="userName" name="userName" placeholder="Your Full Name"  required /><br>
+    </label>
+    
+    <label>
+        <span>Your Password :</span>
+        <input id="Password" type="Password" pattern="(?=.*[!@#\$%\^&\*]).{8,}."  [(ngModel)]="password" name="password" placeholder="Valid Password"  required> <br>
+    </label>
+   <label>
+        <span>Your First Name :</span>
+        <input id="firstname" type="text" [(ngModel)]="firstname" name="firstname"   placeholder="Valid First Name"  required /><br>
+    </label>
+   <label>
+        <span>Your Last Name:</span>
+        <input id="lastname" type="text"  [(ngModel)]="lastname" name="lastname" placeholder="Valid Last Name"  required /><br>
+    </label>
+   <label>
+        <span>Your Email:</span>
+        <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="email" name="email" placeholder="Valid Email Address"  required /><br>
+    </label>
+   
+    
+     <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Submit" /> 
+    </label>    
+   </form>
+  {{viewMessage}}

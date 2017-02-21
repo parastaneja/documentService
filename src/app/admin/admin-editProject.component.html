@@ -1,0 +1,15 @@
+<button (click)="back()">back</button><br>
+<form (ngSubmit)="editProject()"  class="smart-green"><br>
+  <h1> Edit a Project!
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Project Name :</span>
+        <input id="Project name" type="text"  [(ngModel)]="editName" name="editName" placeholder="Your Project Name"  required /><br>
+    </label>
+    
+    <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Submit" /> 
+    </label>   
+</form>

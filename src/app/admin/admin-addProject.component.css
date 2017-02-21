@@ -1,0 +1,313 @@
+ .smart-green {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.smart-green h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #9DC45F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}
+.smart-green h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.smart-green label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.smart-green label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.smart-green textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.smart-green select {
+    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+   appearance:none;
+    -webkit-appearance:none; 
+   -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width:100%;
+    height:30px;
+}
+.smart-green .button {
+    background-color: #9DC45F;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.smart-green .button:hover {
+    background-color:#80A24A;
+}
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.heroes li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.heroes li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.heroes .text {
+  position: relative;
+  top: -3px;
+}
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button.delete {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: gray !important;
+  color:white;
+}
+#loading
+.ng-busy {
+  z-index: 1002;
+}
+.ng-busy,
+.ng-busy > *,
+.ng-busy > dynamiccomponent > * {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.ng-busy-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: #fff;
+  opacity: .7;
+}
+.ng-busy-default-wrapper {
+  text-align: center;
+}
+.ng-busy-default-sign {
+  position: relative;
+  display: inline-block;
+  z-index: 1003;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-top: 0;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  background: #f8f8f8;
+  color: #333;
+}
+.ng-busy-default-text {
+  display: inline-block;
+  margin-left: 6px;
+  max-width: 400px;
+  font-size: 14px;
+  text-align: left;
+}
+.ng-busy-default-spinner {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+.ng-busy-default-spinner div {
+  position: absolute;
+  left: 44.5%;
+  top: 37%;
+  width: 10%;
+  height: 26%;
+  background: #666;
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-animation: busy-spinner-anim 1s linear infinite;
+          animation: busy-spinner-anim 1s linear infinite;
+}
+.ng-busy-default-spinner .bar1 {
+  -webkit-transform: rotate(0deg) translate(0, -142%);
+          transform: rotate(0deg) translate(0, -142%);
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.ng-busy-default-spinner .bar2 {
+  -webkit-transform: rotate(30deg) translate(0, -142%);
+          transform: rotate(30deg) translate(0, -142%);
+  -webkit-animation-delay: -0.91666667s;
+          animation-delay: -0.91666667s;
+}
+.ng-busy-default-spinner .bar3 {
+  -webkit-transform: rotate(60deg) translate(0, -142%);
+          transform: rotate(60deg) translate(0, -142%);
+  -webkit-animation-delay: -0.83333333s;
+          animation-delay: -0.83333333s;
+}
+.ng-busy-default-spinner .bar4 {
+  -webkit-transform: rotate(90deg) translate(0, -142%);
+          transform: rotate(90deg) translate(0, -142%);
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+.ng-busy-default-spinner .bar5 {
+  -webkit-transform: rotate(120deg) translate(0, -142%);
+          transform: rotate(120deg) translate(0, -142%);
+  -webkit-animation-delay: -0.66666667s;
+          animation-delay: -0.66666667s;
+}
+.ng-busy-default-spinner .bar6 {
+  -webkit-transform: rotate(150deg) translate(0, -142%);
+          transform: rotate(150deg) translate(0, -142%);
+  -webkit-animation-delay: -0.58333333s;
+          animation-delay: -0.58333333s;
+}
+.ng-busy-default-spinner .bar7 {
+  -webkit-transform: rotate(180deg) translate(0, -142%);
+          transform: rotate(180deg) translate(0, -142%);
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.ng-busy-default-spinner .bar8 {
+  -webkit-transform: rotate(210deg) translate(0, -142%);
+          transform: rotate(210deg) translate(0, -142%);
+  -webkit-animation-delay: -0.41666667s;
+          animation-delay: -0.41666667s;
+}
+.ng-busy-default-spinner .bar9 {
+  -webkit-transform: rotate(240deg) translate(0, -142%);
+          transform: rotate(240deg) translate(0, -142%);
+  -webkit-animation-delay: -0.33333333s;
+          animation-delay: -0.33333333s;
+}
+.ng-busy-default-spinner .bar10 {
+  -webkit-transform: rotate(270deg) translate(0, -142%);
+          transform: rotate(270deg) translate(0, -142%);
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+.ng-busy-default-spinner .bar11 {
+  -webkit-transform: rotate(300deg) translate(0, -142%);
+          transform: rotate(300deg) translate(0, -142%);
+  -webkit-animation-delay: -0.16666667s;
+          animation-delay: -0.16666667s;
+}
+.ng-busy-default-spinner .bar12 {
+  -webkit-transform: rotate(330deg) translate(0, -142%);
+          transform: rotate(330deg) translate(0, -142%);
+  -webkit-animation-delay: -0.08333333s;
+          animation-delay: -0.08333333s;
+}
+@-webkit-keyframes busy-spinner-anim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+@keyframes busy-spinner-anim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

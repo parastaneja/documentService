@@ -1,0 +1,31 @@
+
+<form (ngSubmit)="back()">
+         <button type="submit">Back</button>
+</form>
+
+<form (ngSubmit)="addColumn()" class="smart-green"><br>
+   
+    <h1> Add a Column !
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Column Name :</span>
+        <input id="columnname" type="text"  [(ngModel)]="columnName" name="columnName"   required /><br>
+    </label>
+        <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Submit" /> 
+    </label>    
+</form>
+{{viewMessage}}
+
+
+<h2>{{documentName}} Document Columns</h2>
+<ul class="heroes">
+  <li *ngFor="let column of columns">
+    <span class="badge">.</span>
+    <span>{{column.column_name}}</span>
+   <button (click)="editColumn(column)">edit</button>
+    <button class="delete" (click)="deleteColumn(column)">x</button>
+  </li>
+</ul>

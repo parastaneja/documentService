@@ -1,0 +1,16 @@
+
+ <h2>Projects</h2>   
+
+<div  >
+  <div *ngFor="let userProject of userProjects" class="box box3 shadow1">
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <button class="myButton" (click)="displayDocuments(userProject)">view</button>
+    <button class="myButton" (click)="deleteProject(userProject)">x</button>
+    <button class="myButton"(click)="editProject(userProject)">edit</button>
+      <h3>{{userProject.project_name}}</h3>
+  </div>
+  <div (click)="addProject()" class="col-1-4">
+    <div class="box box3 shadow1">
+      <h3>+</h3>
+    </div>
+  

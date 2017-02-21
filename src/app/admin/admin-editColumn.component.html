@@ -1,0 +1,15 @@
+<button (click)="back()">back</button><br>
+<form (ngSubmit)="editColumn(column)"  class="smart-green"><br>
+  
+    <h1> Edit a Column !
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Column Name :</span>
+        <input id="EditColumnname" type="text"  [(ngModel)]="editColumnName" name="editColumnName"   required /><br>
+    </label>
+        <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Update!" /> 
+    </label>    
+</form>
